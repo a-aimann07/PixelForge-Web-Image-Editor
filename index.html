@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <main>
+    <nav class="navbar">
+  <div class="nav-left">
+    <span class="logo">PixelForge</span>
+  </div>
+  <div class="nav-right">
+    <span class="tagline">Image Editor</span>
+  </div>
+</nav>
+
+        <section>
+            <div class="left">
+                <div class="top">
+                    <label for="image-input" class="btn" id="choose-image">
+                        choose Image
+                        <input type="file" id="image-input" accept="image/*" hidden>
+                    </label>
+                    <button class="btn" id="reset-btn">Reset</button>
+                    <button class="btn" id="download-btn">Download image</button>
+                </div>
+                <div class="bottom">
+                    <div class="placeholder">
+                        <i class="ri-image-add-fill"></i>
+                        <p>No image is choosen</p>
+                    </div>
+                    <canvas id="image-canvas"></canvas>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Filters</h2>
+                <div class="filters">
+                <div class="filter">
+                   
+                </div>
+                
+            </div>
+            <h2>Presets</h2>
+            <div class="presets"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
